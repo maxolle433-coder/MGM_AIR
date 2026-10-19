@@ -1,0 +1,38 @@
+<screen permanent="true">
+	<view extends="lv_obj" width="100%" height="100%" style_bg_color="#color_dark_bg">
+		<lv_image src="wheels2_display" align="center" />
+		<lv_image src="body2_display" align="center">
+			<bind_style_prop prop="translate_y" subject="subject_body_offset" />
+		</lv_image>
+
+		<lv_button
+			align="bottom_left"
+			x="12"
+			y="-12"
+			width="100"
+			height="48"
+			style_bg_color="#color_dark_panel"
+			style_bg_opa="90%"
+			style_text_color="#color_accent_text"
+			style_radius="8"
+		>
+			<subject_increment_event subject="subject_body_offset" step="-2" min_value="0" max_value="10" />
+			<lv_label text="RAISE" align="center" />
+		</lv_button>
+
+		<lv_button
+			align="bottom_right"
+			x="-12"
+			y="-12"
+			width="100"
+			height="48"
+			style_bg_color="#color_accent"
+			style_bg_opa="95%"
+			style_text_color="#color_accent_text"
+			style_radius="8"
+		>
+			<subject_increment_event subject="subject_body_offset" step="2" min_value="0" max_value="10" />
+			<lv_label text="LOWER" align="center" />
+		</lv_button>
+	</view>
+</screen>
