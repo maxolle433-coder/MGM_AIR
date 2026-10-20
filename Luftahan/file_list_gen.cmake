@@ -83,6 +83,7 @@ list(
   ${CMAKE_CURRENT_LIST_DIR}/images/icon_wifi_high_data.c
   ${CMAKE_CURRENT_LIST_DIR}/images/icon_wifi_low_data.c
   ${CMAKE_CURRENT_LIST_DIR}/images/icon_wifi_zero_data.c
+  ${CMAKE_CURRENT_LIST_DIR}/images/Knapparv1_data.c
   ${CMAKE_CURRENT_LIST_DIR}/images/wheels2_display_data.c
   ${CMAKE_CURRENT_LIST_DIR}/Luftahan_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/Luftahan.c

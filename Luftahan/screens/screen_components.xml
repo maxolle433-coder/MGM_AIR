@@ -1,38 +1,170 @@
 <screen permanent="true">
-	<view extends="lv_obj" width="100%" height="100%" style_bg_color="#color_dark_bg">
-		<lv_image src="wheels2_display" align="center" />
-		<lv_image src="body2_display" align="center">
-			<bind_style_prop prop="translate_y" subject="subject_body_offset" />
-		</lv_image>
+	<view extends="lv_obj" width="100%" height="100%" style_bg_color="#color_dark_bg" scrollable="false">
+		<lv_obj
+			align="top_left"
+			x="0"
+			y="0"
+			width="240"
+			height="112"
+			style_bg_opa="0%"
+			style_border_width="0"
+			style_pad_all="0"
+			scrollable="true"
+			scroll_snap_x="start"
+			scroll_one="true"
+		>
+			<lv_obj
+				align="top_left"
+				x="0"
+				y="0"
+				width="240"
+				height="112"
+				style_bg_opa="0%"
+				style_border_width="0"
+				style_pad_all="0"
+				scrollable="false"
+				snappable="true"
+			>
+				<lv_image src="wheels2_display" align="top_left" scrollable="false" />
+				<lv_image src="body2_display" align="top_left" scrollable="false">
+					<bind_style_prop prop="translate_y" subject="subject_body_offset" />
+				</lv_image>
+			</lv_obj>
+
+			<lv_obj
+				align="top_left"
+				x="240"
+				y="0"
+				width="240"
+				height="112"
+				style_bg_opa="0%"
+				style_border_width="0"
+				style_pad_all="0"
+				scrollable="false"
+				snappable="true"
+			>
+				<lv_label
+					align="top_mid"
+					y="2"
+					width="200"
+					text="TRYCK"
+					style_text_font="font_h4"
+					style_text_color="#color_accent"
+					style_text_align="center"
+				/>
+
+				<lv_label
+					align="top_left"
+					x="20"
+					y="38"
+					width="30"
+					text="FL"
+					style_text_font="font_h5"
+					style_text_align="center"
+				/>
+				<lv_label
+					align="top_left"
+					x="50"
+					y="34"
+					width="50"
+					bind_text="subject_air_fl"
+					style_text_font="font_h4"
+					style_text_color="#color_accent"
+					style_text_align="left"
+				/>
+
+				<lv_label
+					align="top_left"
+					x="126"
+					y="38"
+					width="34"
+					text="FR"
+					style_text_font="font_h5"
+					style_text_align="center"
+				/>
+				<lv_label
+					align="top_left"
+					x="160"
+					y="34"
+					width="50"
+					bind_text="subject_air_fr"
+					style_text_font="font_h4"
+					style_text_color="#color_accent"
+					style_text_align="left"
+				/>
+
+				<lv_label
+					align="top_left"
+					x="20"
+					y="78"
+					width="30"
+					text="RL"
+					style_text_font="font_h5"
+					style_text_align="center"
+				/>
+				<lv_label
+					align="top_left"
+					x="50"
+					y="74"
+					width="50"
+					bind_text="subject_air_rl"
+					style_text_font="font_h4"
+					style_text_color="#color_accent"
+					style_text_align="left"
+				/>
+
+				<lv_label
+					align="top_left"
+					x="126"
+					y="78"
+					width="34"
+					text="RR"
+					style_text_font="font_h5"
+					style_text_align="center"
+				/>
+				<lv_label
+					align="top_left"
+					x="160"
+					y="74"
+					width="50"
+					bind_text="subject_air_rr"
+					style_text_font="font_h4"
+					style_text_color="#color_accent"
+					style_text_align="left"
+				/>
+			</lv_obj>
+		</lv_obj>
+
+		<lv_image src="Knapparv1" align="center" scrollable="false" />
 
 		<lv_button
-			align="bottom_left"
-			x="12"
-			y="-12"
-			width="100"
-			height="48"
-			style_bg_color="#color_dark_panel"
-			style_bg_opa="90%"
-			style_text_color="#color_accent_text"
-			style_radius="8"
+			align="center"
+			x="0"
+			y="-9"
+			width="80"
+			height="72"
+			style_bg_opa="0%"
+			style_border_width="0"
+			style_outline_width="0"
+			style_shadow_width="0"
+			scrollable="false"
 		>
 			<subject_increment_event subject="subject_body_offset" step="-2" min_value="0" max_value="10" />
-			<lv_label text="RAISE" align="center" />
 		</lv_button>
 
 		<lv_button
-			align="bottom_right"
-			x="-12"
-			y="-12"
-			width="100"
-			height="48"
-			style_bg_color="#color_accent"
-			style_bg_opa="95%"
-			style_text_color="#color_accent_text"
-			style_radius="8"
+			align="center"
+			x="0"
+			y="108"
+			width="80"
+			height="72"
+			style_bg_opa="0%"
+			style_border_width="0"
+			style_outline_width="0"
+			style_shadow_width="0"
+			scrollable="false"
 		>
 			<subject_increment_event subject="subject_body_offset" step="2" min_value="0" max_value="10" />
-			<lv_label text="LOWER" align="center" />
 		</lv_button>
 	</view>
 </screen>

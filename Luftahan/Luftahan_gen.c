@@ -87,6 +87,8 @@ const void * wheels2_display = NULL;
 extern const void * wheels2_display_data;
 const void * body2_display = NULL;
 extern const void * body2_display_data;
+const void * Knapparv1 = NULL;
+extern const void * Knapparv1_data;
 const void * icon_arrow_down = NULL;
 extern const void * icon_arrow_down_data;
 const void * icon_arrow_left = NULL;
@@ -300,6 +302,10 @@ void Luftahan_init_gen(const char * asset_path)
         /* body2_display */
         if (!body2_display) {
             body2_display = &body2_display_data;
+        }
+        /* Knapparv1 */
+        if (!Knapparv1) {
+            Knapparv1 = &Knapparv1_data;
         }
         /* icon_arrow_down */
         if (!icon_arrow_down) {
@@ -624,6 +630,7 @@ void Luftahan_init_gen(const char * asset_path)
     lv_xml_register_image(NULL, "air_background", air_background);
     lv_xml_register_image(NULL, "wheels2_display", wheels2_display);
     lv_xml_register_image(NULL, "body2_display", body2_display);
+    lv_xml_register_image(NULL, "Knapparv1", Knapparv1);
     lv_xml_register_image(NULL, "icon_arrow_down", icon_arrow_down);
     lv_xml_register_image(NULL, "icon_arrow_left", icon_arrow_left);
     lv_xml_register_image(NULL, "icon_arrow_right", icon_arrow_right);

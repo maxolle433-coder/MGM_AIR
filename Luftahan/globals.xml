@@ -143,6 +143,7 @@
 		<data name="air_background" src_path="images/air_background.png" color_format="argb8888" />
 		<data name="wheels2_display" src_path="images/wheels2_display.png" color_format="argb8888" />
 		<data name="body2_display" src_path="images/body2_display.png" color_format="argb8888" />
+		<data name="Knapparv1" src_path="images/Knapparv1.png" color_format="argb8888" />
 		<convert
 			src="images/icons/svg/arrow_down.svg"
 			dest="images/icons/arrow_down.png"

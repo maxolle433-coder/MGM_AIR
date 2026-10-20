@@ -182,6 +182,7 @@ extern lv_font_t * font_h1;
 extern const void * air_background;
 extern const void * wheels2_display;
 extern const void * body2_display;
+extern const void * Knapparv1;
 extern const void * icon_arrow_down;
 extern const void * icon_arrow_left;
 extern const void * icon_arrow_right;
